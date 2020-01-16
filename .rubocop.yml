@@ -1,0 +1,53 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+RSpec:
+  Enabled: true
+
+Performance:
+  Enabled: true
+
+Bundler:
+  Enabled: true
+
+Gemspec:
+  Enabled: true
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 80
+
+Metrics/MethodLength:
+  Max: 12
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+    - '**/*.gemspec'
+
+Layout/IndentationConsistency:
+  EnforcedStyle: normal
+
+Style/BlockDelimiters:
+  Enabled: true
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: true
+  Exclude:
+    - 'lib/tnt.rb'
